@@ -29,7 +29,7 @@ public class Day02Tests
         _testOutputHelper.WriteLine(answer.ToString());
         answer.Should().Be(10310);
     }
-    
+
     [Fact]
     public void ValidatePart2()
     {

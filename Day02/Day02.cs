@@ -86,48 +86,22 @@ public class GamePlayRound
     }
 }
 
-public class Game
-{
-    public static int Play(HandType opponent, HandType response)
-    {
-        var gameResult = GameRules.GamePlay.Single(x => x.Opponent == opponent && x.Response == response);
-        return gameResult.Score;
-    }
-
-    public static int Play(HandType opponent, GameResultType result)
-    {
-        var gameResult = GameRules.GamePlay.Single(x => x.Opponent == opponent && x.Result == result);
-        return gameResult.Score;
-    }
-}
 public class Day02
 {
     public static int Part1(IEnumerable<string> file)
     {
-        int totalScore = 0;
-        
-        foreach (var round in file)
-        {
-            var opponent = HandType.Parse(round[0]);
-            var response = HandType.Parse(round[2]);
-
-            totalScore = totalScore + Game.Play(opponent, response);
-        }
-        
+        var totalScore = file.Select(x => new {opp = HandType.Parse(x[0]), resp = HandType.Parse(x[2])})
+            .Select(x => GameRules.GamePlay.Single(y => x.opp == y.Opponent && x.resp == y.Response))
+            .Sum(x => x.Score);
         return totalScore;
     }
+    
     public static int Part2(IEnumerable<string> file)
     {
-        int totalScore = 0;
-        
-        foreach (var round in file)
-        {
-            var opponent = HandType.Parse(round[0]);
-            var result = GameResultType.Parse(round[2]);
-
-            totalScore = totalScore + Game.Play(opponent, result);
-        }
-        
+        var totalScore = file.Select(x => new {opp = HandType.Parse(x[0]), result = GameResultType.Parse(x[2])})
+            .Select(x => GameRules.GamePlay.Single(y => x.opp == y.Opponent && x.result == y.Result))
+            .Sum(x => x.Score);
         return totalScore;
     }
+   
 }
