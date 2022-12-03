@@ -13,51 +13,24 @@ public class Day02v2Test
     {
         _testOutputHelper = testOutputHelper;
     }
-
-    [Fact]
-    public void ValidateTest()
-    {
-        var file = File.ReadLines("./Day02/Day02-test.txt");
-
-        int totalScore = 0;
-
-        foreach (var line in file)
-        {
-            totalScore = totalScore + Play(line);
-        }
-
-        _testOutputHelper.WriteLine(totalScore.ToString());
-        totalScore.Should().Be(15);
-    }
     
     [Fact]
-    public void ValidateTest1()
+    public void ValidateTest4()
     {
         var file = File.ReadLines("./Day02/Day02.txt");
-
-        var totalScore = file.Select(Play).Sum(x => x);
-
+        var totalScore = Day02PM.ExecuteA(file);
         _testOutputHelper.WriteLine(totalScore.ToString());
         totalScore.Should().Be(10310);
     }
     
-    public static int Play(string line) => line switch
+    [Fact]
+    public void ValidateTest5()
     {
-        "A Y" => 2 + 6,
-        "A X" => 1 + 3,
-        "A Z" => 3 + 0,
-        
-        "B X" => 1 + 0,
-        "B Y" => 2 + 3,
-        "B Z" => 3 + 6,
-        
-        "C X" => 1 + 6,
-        "C Y" => 2 + 0,
-        "C Z" => 3 + 3
-    };
-    
-    
-    
+        var file = File.ReadLines("./Day02/Day02.txt");
+        var totalScore = Day02PM.ExecuteB(file);
+        _testOutputHelper.WriteLine(totalScore.ToString());
+        totalScore.Should().Be(14859);
+    }
 }
 
     
