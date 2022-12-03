@@ -8,5 +8,13 @@
     &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day02.Day02Tests.ValidatePart1&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day02.Day02Tests.ValidatePart2&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day02.Day02Tests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day02v2.Day02v2Test.ValidateTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day02v2.Day02v2Test.ValidateTest1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day03.Day03Test.ValidateTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day03.Day03Test.ValidateTest2&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day03.Day03Test.ValidateTest3&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day03.Day03Test.ValidateTest4&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day03.Day03Test.ValidatePart1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day03.Day03Test&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
