@@ -15,12 +15,11 @@ public class Day04Test
     {
         _testOutputHelper = testOutputHelper;
     }
-   
+    
     [Fact]
     public void ValidatePart1()
     {
-        var file = File.ReadAllText(TEST_FILE);
-        var sum = Day04.Part1(file);
+        var sum = Day04.Part1();
         _testOutputHelper.WriteLine(sum.ToString());
         sum.Should().Be(540);
     }
@@ -28,8 +27,7 @@ public class Day04Test
     [Fact]
     public void ValidatePart2()
     {
-        var file = File.ReadAllText(TEST_FILE);
-        var sum = Day04.Part2(file);
+        var sum = Day04.Part2();
         _testOutputHelper.WriteLine(sum.ToString());
         sum.Should().Be(872);
     }
