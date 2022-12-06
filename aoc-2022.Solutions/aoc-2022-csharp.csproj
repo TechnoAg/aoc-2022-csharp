@@ -35,6 +35,19 @@
       <None Update="Day04\day04input.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-    </ItemGroup>    
+      <None Update="Day05\day05input.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Remove="aoc-2022.Day05\**" />      
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="aoc-2022.Day05\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="aoc-2022.Day05\**" />
+    </ItemGroup>
+   
 
 </Project>

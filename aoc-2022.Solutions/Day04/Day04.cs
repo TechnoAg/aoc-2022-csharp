@@ -47,10 +47,11 @@ public class Day04
     {
         var day04 = new Day04();
 
-        var overlap = new Func<Elf, Elf, bool>((elfA, elfB) =>
-            (elfA.Low >= elfB.Low && elfA.Low <= elfB.High) || (elfA.High >= elfB.Low && elfA.High <=  elfB.High) || (elfA.Low <= elfB.Low && elfA.High >= elfB.High));
-
+        //My sucky logic
+        //var overlap = new Func<Elf, Elf, bool>((elfA, elfB) => (elfA.Low >= elfB.Low && elfA.Low <= elfB.High) || (elfA.High >= elfB.Low && elfA.High <=  elfB.High) || (elfA.Low <= elfB.Low && elfA.High >= elfB.High));
+        //Much simplier!
+        var overlap =  new Func<Elf, Elf, bool>((elfA, elfB) => (elfA.Low <= elfB.High && elfA.High >= elfB.Low));
+        
         return day04.Main(overlap);
     }
-
 }

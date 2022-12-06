@@ -24,5 +24,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2f38ce47_002D8194_002D4ecf_002D91fd_002D8ec8655f796d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ValidatePart1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day04.Day04Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F0D7472E-8838-4B4A-854F-588FB0576507::net6.0::aoc_2022_csharp.Day05.Day05Test.ValidatePart1&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	</wpf:ResourceDictionary>
