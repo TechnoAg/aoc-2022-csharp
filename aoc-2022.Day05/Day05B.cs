@@ -48,7 +48,7 @@ public class Day05B
         
            for (int i = 1; i <= move.Quantity; i++)
            {
-                valsToMove.Add(stacks[move.From].Pop());
+               valsToMove.Add(stacks[move.From].Pop());
            }            
         
             valsToMove.Reverse();
